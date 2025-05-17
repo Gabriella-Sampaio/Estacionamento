@@ -83,8 +83,8 @@ totalValEstac = valEstac + (valAddEstac * horasExtras);
                          |                      |
 int horasExtras = (int)Math.Ceiling((minutosExtras - tolerancia) / 60.0);
                  
-  Val final       prim hr         10         result a cima
-totalValEstacP = valEstacP + (valAddEstacP * horasExtras); */
+  Val final      prim hr        10       result a cima
+totalValEstac = valEstac + (valAddEstac * horasExtras); */
 
 
 if (tempoValEstac <= 5) // 5 horas = diária, porém a equação faz cobrar $60 se passar de 246 min
@@ -115,10 +115,10 @@ if(valetOpc == "S")
     addValet = 0.2 * totalValEstac;
 }
 
-else //se não for S, ou, se digitar qualquer coisa sem ser S
+else 
 {
     valetOpc = "N";
-    addValet = 0; //precisa dizer o q acontece cm a var se n modificar no if pra poder add no final
+    addValet = 0; 
 }
 
 
